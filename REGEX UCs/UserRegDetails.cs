@@ -38,7 +38,14 @@ namespace REGEX_UCs
                 string regexCondition = "^[A-Z]{1}[a-z]{3,}$";
                 Iteration(userInput, regexCondition);
             }
-
+            //UC3 Adding Email
+            public static void EmailID()       
+            {
+                Console.WriteLine("Enter your Email ID");
+                string userInput = Console.ReadLine();
+                string regexCondition = "^[a-z0-9]{1,}([._+-]{1}[a-z0-9]{1,}){0,1}[@]{1}[a-z0-9]{1,}[.]{1}[a-zA-Z]{2,3}([.]{1}[a-z]{2,3}){0,1}$";
+                Iteration(userInput, regexCondition);
+            }
         }
     }
 }

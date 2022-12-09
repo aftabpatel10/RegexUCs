@@ -16,7 +16,8 @@ namespace REGEX_UCs
             {
                 Console.WriteLine("\nPlease select any one from below :\n" +
                 "Press 1: To Register your First Name.\n" +
-                "Press 2: To Register your Last Name \n");
+                "Press 2: To Register your Last Name \n" +
+                "Press 3: To Register your EmailID");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -25,6 +26,9 @@ namespace REGEX_UCs
                         break;
                     case 2:
                         UserDetails.LastName();
+                        break;
+                    case 3:
+                        UserDetails.EmailID(); 
                         break;
                     default:
                         Console.WriteLine("Invalid option selected ,Please try again !");
