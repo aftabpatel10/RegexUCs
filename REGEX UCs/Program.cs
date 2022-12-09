@@ -30,6 +30,9 @@ namespace REGEX_UCs
                     case 3:
                         UserDetails.EmailID(); 
                         break;
+                     case 4:
+                            UserDetails.MobileNumber();
+                        break;
                     default:
                         Console.WriteLine("Invalid option selected ,Please try again !");
                         break;

@@ -46,6 +46,14 @@ namespace REGEX_UCs
                 string regexCondition = "^[a-z0-9]{1,}([._+-]{1}[a-z0-9]{1,}){0,1}[@]{1}[a-z0-9]{1,}[.]{1}[a-zA-Z]{2,3}([.]{1}[a-z]{2,3}){0,1}$";
                 Iteration(userInput, regexCondition);
             }
+            //UC4 Adding Mobile Number
+            public static void MobileNumber()         
+            {
+                Console.WriteLine("Enter your Mobile Number");
+                string userInput = Console.ReadLine();
+                string regexCondition = "^[9]{1}[1]{1}[ ]{1}[1-9]{1}[0-9]{9}$";
+                Iteration(userInput, regexCondition);
+            }
         }
     }
 }
