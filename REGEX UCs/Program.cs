@@ -17,7 +17,9 @@ namespace REGEX_UCs
                 Console.WriteLine("\nPlease select any one from below :\n" +
                 "Press 1: To Register your First Name.\n" +
                 "Press 2: To Register your Last Name \n" +
-                "Press 3: To Register your EmailID");
+                "Press 3: To Register your EmailID\n" +
+                "Press 4: to enter your Mobile Number.\n" +
+                "Press 5: To set your password (minimum 8 characters).");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,6 +34,9 @@ namespace REGEX_UCs
                         break;
                      case 4:
                             UserDetails.MobileNumber();
+                        break;
+                    case 5:
+                        UserDetails.PassMin8Char();
                         break;
                     default:
                         Console.WriteLine("Invalid option selected ,Please try again !");
