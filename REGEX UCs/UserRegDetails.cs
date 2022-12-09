@@ -70,13 +70,23 @@ namespace REGEX_UCs
                 string regexCondition = "^(?=.*[A-Z]).{1,}[a-zA-Z0-9]{7,}$";
                 Iteration(userInput, regexCondition);
             }
-            public static void UpperCase1AndNumeric1() //UC7 (min 8 char and atleast 1 upper case and 1 numeric in it.
+            //UC7 (min 8 char and atleast 1 upper case and 1 numeric in it.
+            public static void UpperCase1AndNumeric1() 
             {
                 Console.WriteLine("Enter your Password");
                 string userInput = Console.ReadLine();
                 string regexCondition = "^(?=.*[A-Z]).{1,}(?=.*[0-9]).{1,}[a-zA-Z0-9]{6,}$";
                 Iteration(userInput, regexCondition);
             }
+            //UC8 (all condition same as previous+ 1 exact special Char.)
+            public static void SpecialCharacter1() 
+            {
+                Console.WriteLine("Enter your Password");
+                string userInput = Console.ReadLine();
+                string regexCondition = "(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!@$%^&*-]).{8,}$";
+                Iteration(userInput, regexCondition);
+            }
         }
     }
 }
+

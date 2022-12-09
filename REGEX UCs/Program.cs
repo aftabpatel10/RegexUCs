@@ -21,7 +21,8 @@ namespace REGEX_UCs
                 "Press 4: to enter your Mobile Number.\n" +
                 "Press 5: To set your password (minimum 8 characters) \n" +
                 "Press 6: To set password having 8 minimum character and atleast 1 upper case in it .\n" +
-                "Press 7: To set password having 8 min char and atleast 1 upper case and 1 numeric in it.\n");
+                "Press 7: To set password having 8 min char and atleast 1 upper case and 1 numeric in it.\n" +
+                "Press 8: to set password with having exactly 1 special character.\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -45,6 +46,9 @@ namespace REGEX_UCs
                         break;
                     case 7:
                         UserDetails.UpperCase1AndNumeric1();
+                        break;
+                    case 8:
+                        UserDetails.SpecialCharacter1();
                         break;
                     default:
                         Console.WriteLine("Invalid option selected ,Please try again !");
